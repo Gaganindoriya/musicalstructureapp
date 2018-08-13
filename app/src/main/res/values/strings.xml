@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Musical Structure App</string>
+    <string name="title_home">Songs</string>
+    <string name="title_list">List</string>
+    <string name="title_favorite">Favorite</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Home fragment</string>
+</resources>
