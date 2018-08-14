@@ -20,21 +20,20 @@ public class SongsAdapter extends ArrayAdapter<SongBean> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent){
 
-        View listItemView = convertView;
-        if(listItemView == null){
-            listItemView = LayoutInflater.from(getContext()) .inflate(
+        if(convertView == null){
+            convertView = LayoutInflater.from(getContext()) .inflate(
                     R.layout.music_grid_item, parent, false);
         }
 
         SongBean currentSongList = getItem(position);
 
-        TextView songNameTextView =listItemView.findViewById(R.id.SongTextView);
+        TextView songNameTextView =convertView.findViewById(R.id.SongTextView);
         songNameTextView.setText(currentSongList.getSongName());
 
-        ImageView songImageView= (ImageView) listItemView.findViewById(R.id.SongImageView);
+        ImageView songImageView=convertView.findViewById(R.id.SongImageView);
         songImageView.setImageResource(currentSongList.getSongImage());
 
-        return listItemView;
+        return convertView;
 
     }
 }

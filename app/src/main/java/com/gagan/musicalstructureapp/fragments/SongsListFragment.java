@@ -73,7 +73,7 @@ public class SongsListFragment extends Fragment {
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                SongBean songList = (SongBean) parent.getItemAtPosition(position);
+
                 Intent songNameIntent = new Intent(getActivity(), MusicActivity.class);
                 startActivity(songNameIntent);
             }

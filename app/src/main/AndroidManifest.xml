@@ -18,7 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MusicActivity"></activity>
+        <activity
+            android:parentActivityName="com.gagan.musicalstructureapp.MainActivity"
+            android:label="Now Playing"
+            android:name=".MusicActivity" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.gagan.musicalstructureapp.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
